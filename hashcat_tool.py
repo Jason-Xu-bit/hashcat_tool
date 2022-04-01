@@ -31,3 +31,4 @@ else:
         ErrP('p', '\n===============' + '[' + str(i + 1) + '/' + str(len(file_path)) + '] ' + file_path[i].split('/')[-1] + ' [暴力破解]===============')  # 进度
         ErrP('g', 'hashcat -a 3 -m 22000 -w ' + w + ' ' + file_path[i] + ' ?d?d?d?d?d?d?d?d')
         system('hashcat -a 3 -m 22000 -w ' + w + ' ' + file_path[i] + ' ?d?d?d?d?d?d?d?d')
+input('...')
